@@ -18,7 +18,7 @@ export class SearchForm extends Component{
             //Finally, We capture the value on the form
             e.preventDefault()
             const {inputMovie} = this.state;
-            fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${inputMovie}`)
+            fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${inputMovie}`)
             .then(res =>res.json())
             .then(results => {
                 //extract on results the property search and total results
